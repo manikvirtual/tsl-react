@@ -4,6 +4,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Login from "./pages/Login";
 import Layout from './Layout/Main';
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
           <Layout>
             <Routes>
                 <Route exact path="/login" element={<Login />} />
+            </Routes>
+            <Routes>
+                <Route exact path="/dashboard" element={<Dashboard />} />
             </Routes>
           </Layout>
     </Router>
